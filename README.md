@@ -40,3 +40,8 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+
+```Pull BE
+amplify pull --appId d2ryjycfsf8d0i --envName dev
+```
