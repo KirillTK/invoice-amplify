@@ -6,17 +6,23 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint --ext .ts,.js,.vue ."
   },
   "devDependencies": {
-    "nuxt": "^3.3.3"
+    "@nuxt/types": "^2.16.3",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.7"
   },
   "dependencies": {
     "@aws-amplify/ui-vue": "^3.1.13",
-    "@nuxt/types": "^2.16.3",
     "@nuxt/typescript-build": "^3.0.1",
     "@pinia/nuxt": "^0.4.7",
     "aws-amplify": "^5.0.24",
+    "nuxt": "^3.3.3",
     "pinia": "^2.0.33",
     "typescript": "^4.9.5"
   }

@@ -1,6 +1,6 @@
-import { Amplify, Auth } from 'aws-amplify'
+import { Amplify, Auth } from 'aws-amplify';
 import '@aws-amplify/ui-vue';
-import config from '../src/aws-exports'
+import config from '../src/aws-exports';
 import { defineNuxtPlugin } from '#app';
 
 export default defineNuxtPlugin(() => {
@@ -9,6 +9,6 @@ export default defineNuxtPlugin(() => {
   return {
     provide: {
       auth: Auth,
-    }
-  }
-})
+    },
+  };
+});

@@ -1,7 +1,7 @@
-import type { NuxtConfig } from '@nuxt/types'
+import type { NuxtConfig } from '@nuxt/types';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
-const config: NuxtConfig = ({
+const config: NuxtConfig = {
   alias: {
     './runtimeConfig': './runtimeConfig.browser',
   },
@@ -11,15 +11,12 @@ const config: NuxtConfig = ({
     },
   },
   typescript: {
-    strict: true
+    strict: true,
   },
   modules: ['@pinia/nuxt'],
   pinia: {
-    autoImports: [
-      'defineStore',
-      ['defineStore', 'definePiniaStore'],
-    ],
-  }
-});
+    autoImports: ['defineStore', ['defineStore', 'definePiniaStore']],
+  },
+};
 
 export default config;
