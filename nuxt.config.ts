@@ -2,6 +2,7 @@ import type { NuxtConfig } from '@nuxt/types';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 const config: NuxtConfig = {
+  ssr: false,
   alias: {
     './runtimeConfig': './runtimeConfig.browser',
   },
