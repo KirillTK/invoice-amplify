@@ -1,18 +1,10 @@
 module.exports = {
-  mode: 'jit',
-  purge: [
-    './components/**/*.{vue,js}',
-    './layouts/**/*.vue',
-    './pages/**/*.vue',
-    './plugins/**/*.{js,ts}',
-    './nuxt.config.{js,ts}',
-  ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter']
+      },
+    },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
-};
+  plugins: [require('@tailwindcss/typography')],
+}

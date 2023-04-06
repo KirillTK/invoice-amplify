@@ -13,11 +13,11 @@ const config: NuxtConfig = {
   typescript: {
     strict: true,
   },
-  modules: ['@pinia/nuxt'],
+  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss',],
   pinia: {
     autoImports: ['defineStore', ['defineStore', 'definePiniaStore']],
   },
-  css: ['@/public/css/tailwind.scss'],
+  css: ['@/css/tailwind.scss'],
   build: {
     postcss: {
       postcssOptions: {

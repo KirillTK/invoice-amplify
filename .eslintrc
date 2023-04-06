@@ -3,7 +3,8 @@
   "extends": [
     "@nuxtjs/eslint-config-typescript",
     "plugin:prettier/recommended",
-    "prettier"
+    "prettier",
+    "vitest"
   ],
   "plugins": [
     "prettier"
