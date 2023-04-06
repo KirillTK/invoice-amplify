@@ -17,6 +17,17 @@ const config: NuxtConfig = {
   pinia: {
     autoImports: ['defineStore', ['defineStore', 'definePiniaStore']],
   },
+  css: ['@/public/css/tailwind.scss'],
+  build: {
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
+    },
+  },
 };
 
 export default config;
