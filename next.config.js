@@ -3,7 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  output: 'standalone'
+  output: 'standalone',
+  serverRuntimeConfig: {},
+  publicRuntimeConfig: {}
 }
 
 module.exports = nextConfig;
