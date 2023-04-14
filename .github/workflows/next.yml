@@ -27,8 +27,8 @@ jobs:
     - name: Installing stage
       run: npm ci
     - name: Linting stage
-      run: npm lint
+      run: npm run lint
     - name: Tests stage
-      run: npm test
+      run: npm run test
     - name: Build state
       run: npm run build --if-present
